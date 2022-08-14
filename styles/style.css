@@ -1,0 +1,273 @@
+/* Resetting all element styles within the body on all html pages*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: orange;
+  font-family: Tahoma;
+}
+
+
+
+/*Home Page Here*/
+
+/* Setting the width and height. Position is set to absolute to be in the same line as the nav bar links.   */
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+/* Taking the list style off and making it appear in the center of the page. */
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+
+}
+
+/* Adding padding. Changing the nav bar to a horizonal view.*/
+nav li {
+  padding: 30px;
+  display: inline-block;
+}
+
+/* Adjusting the display of the links and adding padding. a tags are set to the center. */
+nav a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0px 7px;
+  color: #000;
+}
+
+/*Adding hover effect to a-tags.*/
+nav a:hover {
+  background-color: orange;
+}
+
+/*Text within the slideshow.*/
+.slide-text {
+  font-size: 25px;
+  text-indent: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+/*Box/container to hold images.*/
+#slideshow {
+  margin: 0 auto;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+
+/*Setting up animation.*/
+.slide-wrapper {
+  width: 5120px;
+  animation-name: paris;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/*The box/container displayed on the left of page.*/
+.slide {
+  float: left;
+  width: 1280px;
+  height: 720px;
+}
+
+/*paris-showcase image*/
+.slide:nth-child(1) {
+  background-image: url("../images/paris-showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+/*city image */
+.slide:nth-child(2) {
+  background-image: url("../images/city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+
+/*night-time image*/
+.slide:nth-child(3) {
+  background-image: url("../images/night-time.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*splurge image */
+.slide:nth-child(4) {
+  background-image: url("../images/splurge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/*Without the keyframes, the animation won't start.  You won't be able to see the images scroll through horizontally. They will stay overhidden or behind each other. If the margin-left width is off a number, it could mess with the transition of the images*/
+
+@keyframes paris {
+
+  20% {
+    margin-left: 0px;
+  }
+
+  30% {
+    margin-left: -1280px;
+  }
+
+  50% {
+    margin-left: -1280px;
+  }
+
+  60% {
+    margin-left: -2560px;
+  }
+
+  70% {
+    margin-left: -2560px;
+  }
+
+  80% {
+    margin-left: -3840px;
+  }
+
+  90% {
+    margin-left: -3840px;
+  }
+}
+
+
+/*paris-header center */
+
+.paris-header {
+  text-align: center;
+}
+
+/*Information about Paris*/
+.paris-location-information {
+  text-align: justify;
+  font-weight: bold;
+
+}
+
+/*To add some color and let the user know this section is done.*/
+hr {
+  border: 5px solid #000;
+}
+
+/*Adusting logo and footer logos with different margins. The logo is different from the footer logos/It has different styles. */
+.logo,
+.homepage-logo,
+.activites-logo,
+.contact-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  margin: -1%;
+  padding: 25px;
+
+}
+
+/*Copyright information for all pages*/
+.homepage-ptag,
+.activites-ptag,
+.contact-ptag {
+  font-size: 25px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0.0;
+  padding: 40px;
+
+}
+
+/*Activites Page*/
+
+/*Applying some size and color to the unicode arrow*/
+.arrow {
+  font-size: 35px;
+  color: #fff;
+}
+
+/*Activites info section; adjusting the unordered list and paragraph tag */
+.todo-one,
+.todo-two,
+.todo-three {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+/*Cost and agegroup - taking the bullet points off the list item*/
+.dot-change {
+  list-style: none;
+}
+
+/*Changing all images on this page to be in the center and fullscreen*/
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Contact Page*/
+
+/*Creating a border around the submit form then placing it in center of page*/
+.submit-form {
+  max-width: 300px;
+  margin: 1rem auto;
+  border: 5px solid black;
+  padding: 2rem;
+}
+
+/*A header that asks the user if they want more information   */
+.contact-request {
+  text-align: center;
+
+}
+
+/*Telling the user what to type in*/
+.contact-p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/*Separating the text above*/
+.underline {
+  border: 2px solid white;
+}
+
+/*Aligning the input, label, and textarea to fit correctly in the .submit-form */
+input,
+label,
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/*Changing the colors with background and the text*/
+.submit-button {
+  background-color: #000;
+  color: #fff;
+}
