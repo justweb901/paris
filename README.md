@@ -1,4 +1,3 @@
-# paris
 Paris Traveling Gateway One
 
 First Gateway Project showcasing Paris and it's activites for all age groups 
